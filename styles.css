@@ -1,16 +1,15 @@
 body {
     text-align: center;
-    font-size: 20px;
+    font-size: 26px;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.location {
+    margin-top: 40px;
 }
 
 button {
     width: 200px;
-    font-size: 20px;
+    font-size: 26px;
     margin: 40px auto 0 auto;
     background-color: green;
     color: white;
