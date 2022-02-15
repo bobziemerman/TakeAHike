@@ -1,23 +1,18 @@
 function chooseFavorite() {
-    return favorites[Math.floor(Math.random(0, favorites.length))];
+    return favorites[Math.floor(Math.random()*favorites.length)];
 }
 
 function chooseToHike() {
-    let temp = toHike[Math.floor(Math.random(0, toHike.length))];
-    console.log(toHike)
-    console.log(temp)
+    let temp = toHike[Math.floor(Math.random()*toHike.length)];
     return temp
 }
 
 let currentTrail = {};
 function pickTrail() {
-    console.log("picking trail")
     if(Math.random() < 0.5) {
-        console.log("if")
         currentTrail = chooseFavorite();
         $(".star").show();
     } else {
-        console.log("else")
         currentTrail = chooseToHike();
         $(".star").hide();
     }
@@ -29,8 +24,6 @@ $(".another").click(() => {
 });
 
 function updatePage() {
-    console.log("updating page")
-    console.log(currentTrail)
-    $(".text").text(currentTrail.name);
+    $(".text").text(currentTrail.name+" - "+currentTrail.length+"mi");
     $(".go").attr("href", currentTrail.go);
 }
