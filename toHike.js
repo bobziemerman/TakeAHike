@@ -84,4 +84,20 @@ const toHike = [
         length: "0.5",
         go: "https://www.google.com/maps/dir/Current+Location/38.98429,-76.87288"
     },
+    {
+        name: "Rosaryville Perimeter Trail",
+        length: "8.9",
+        go: "https://www.google.com/maps/dir/Current+Location/38.78249,-76.80511"
+    },
+    {
+        name: "Davidsonville Park Loop",
+        length: "1.9",
+        go: "https://www.google.com/maps/dir/Current+Location/38.93561,-76.67988"
+    },
+    {
+        name: "Wootonrs Landing Park",
+        length: "1.8",
+        go: "https://www.google.com/maps/dir/Current+Location/38.85624,-76.68656"
+    },
+
 ]
